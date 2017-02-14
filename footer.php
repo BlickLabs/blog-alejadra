@@ -22,8 +22,8 @@
                 footer-join footer-col">
       <p class="footer-join-principal">
         Síguenos en:
-				<img class="footer-img-small footer-img-small-spacing" src="<?php echo get_template_directory_uri() . '/img/icons/fb.png' ?>" alt="Alejandra Gutiérrez Páez"/>
-				<img class="footer-img-small" src="<?php echo get_template_directory_uri() . '/img/icons/instagram.png' ?>" alt="Alejandra Gutiérrez Páez"/>
+				<a href="https://www.facebook.com/Nutri%C3%B3loga-Alejandra-G-P%C3%A1ez-925726230813208/" target='_blank'><img class="footer-img-small footer-img-small-spacing" src="<?php echo get_template_directory_uri() . '/img/icons/fb.png' ?>" alt="Alejandra Gutiérrez Páez"/></a>
+				<a href="https://www.instagram.com/nutriologa.alegpaez/" target='_blank'><img class="footer-img-small" src="<?php echo get_template_directory_uri() . '/img/icons/instagram.png' ?>" alt="Alejandra Gutiérrez Páez"/></a>
       </p>
     </div>
     <div class="col-xs-10 col-md-4 col-sm-3 text-center
