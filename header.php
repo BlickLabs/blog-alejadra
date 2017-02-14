@@ -35,6 +35,11 @@
 	    <img class="header-navbar-logo" src="<?php echo get_template_directory_uri() . '/img/icons/logo_2.png' ?>"/>
 	  </a>
 	  <ul class="header-navbar-list">
+			<li class="header-navbar-list-item" hcolor="white">
+		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com">
+	        Inicio
+	      </a>
+	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
 		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/recetas/">
 	        Recetas
