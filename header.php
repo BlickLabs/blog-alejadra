@@ -46,12 +46,12 @@
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/">
-	        Paquetes
+		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/servicios/">
+	        Servicios
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/">
+		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/acerca/">
 	        Acerca de mi
 	      </a>
 	    </li>
@@ -61,7 +61,7 @@
 	      </a>
 	    </li>
 			<li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://blog.alegpaez.com/">
+		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/contacto/">
 	        Contacto
 	      </a>
 	    </li>
