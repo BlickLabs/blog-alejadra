@@ -77,8 +77,20 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 	font-style: normal;
 }
 @font-face {
+	font-family: 'FuturaStd-Heavy';
+	src: url('fonts/FuturaStd-Heavy 2.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
 	font-family: 'Futura-Std-Book';
-	src: url('fonts/Futura-Std-Book.otf');
+	src: url('fonts/FuturaStd-Book.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaStd-Medium';
+	src: url('fonts/FuturaStd-Medium2.otf');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -101,13 +113,25 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'FuturaStd-Book';
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
+.suscribe {
+  height: 42px;
+  padding: 13px 77px 13px 19px;
+  font-size: 14px;
+  border: .5px solid #fff;
+  border-radius: 6px;
+  min-width: 219px;
+  color: #b0bec5;
+}
 
+input.suscribe:focus {
+    outline: 0px solid #ed7161 !important;
+}
 body {
-	font-family: 'Futura-Std';
+	font-family: 'Futura-Std-Book';
 	margin: 0;
 }
 
@@ -397,9 +421,9 @@ h1,
 .entry-title,
 .post-type-archive-jetpack-testimonial .page-title {
 	color: #343434;
-	font-size: 40px;
-	font-size: 2.5rem;
+	font-size: 30px !important;
 	line-height: 1.2;
+	font-family: 'FuturaStd-Heavy';
 }
 
 h2,
@@ -417,6 +441,8 @@ h3,
 	font-size: 25px;
 	font-size: 1.5625rem;
 	line-height: 1.2;
+	font-family: 'Futura-Std';
+	color: #ed7161;
 }
 
 h4,
@@ -1688,10 +1714,12 @@ a:hover {
 .entry-content,
 .entry-summary {
 	margin: 0;
+	font-family: 'Futura-Std-Book';
 }
 
 .entry-content {
 	color: #575656;
+	font-family: 'Futura-Std-Book';
 }
 
 .page-content {

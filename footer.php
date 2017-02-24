@@ -35,7 +35,7 @@
 				<div class="footer-small-line"></div>
 			</div>
       <p class="footer-social-terms">
-         © Alejandra Gutiérrez 2017 todos los derechos reservados
+         © Alejandra Gutiérrez 2017 Todos los derechos reservados
       </p>
     </div>
     <div class="col-xs-10 col-md-3-half col-sm-3 vertical-middle
@@ -43,7 +43,11 @@
       <p class="footer-info center">
         Suscríbete a nuestro Newsletter
       </p>
-      <input class="fotter-input" placeholder="Correo electrónico" type='text'></input>
+			<form class="form footer_form" onsubmit="sendNewsletterEmail(); return false;" id='newsLetter'>
+				<div class="input_text">
+					<input required type="form_sub" class="suscribe form-control1" id="correo" placeholder="Correo electrónico">
+				</div>
+			</form>
     </div>
   </div>
 </footer>
@@ -61,5 +65,34 @@
   js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  function sendNewsletterEmail() {
+    var myform = document.getElementById("newsLetter");
+    var fd = new FormData(myform );
+    $.ajax({
+      url: "/newsletter/",
+      data: fd,
+      cache: false,
+      processData: false,
+      contentType: false,
+      type: 'POST',
+      success: function (result) {
+        // do something with the result
+        event.preventDefault();
+        if (result.status === "subscribed") {
+          document.getElementById("newsLetter").reset();
+          document.querySelector('#notifications').text = 'Listo, espera las últimas noticias';
+        } else {
+          if (result.title === "Member Exists") {
+            document.querySelector('#notifications').text = 'El correo ya existe, intenta con otro';
+          } else {
+            document.querySelector('#notifications').text = 'El correo no es válido, intenta con otro';
+          }
+        }
+        document.querySelector('#notifications').open();
+      }
+    });
+  }
+</script>
 </body>
 </html>
