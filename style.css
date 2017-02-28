@@ -1801,7 +1801,7 @@ a:hover {
 .entry-hero a:hover,
 .site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:focus,
 .site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:hover {
-	color: #ed7161 !important;
+	color: white !important;
 }
 
 .entry-hero .entry-title,
