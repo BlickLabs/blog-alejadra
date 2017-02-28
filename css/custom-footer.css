@@ -300,6 +300,10 @@ p.footer-info-text {
 
   .footer-info {
     padding: 0;
+    text-align: center;
+  }
+  p.footer-info {
+    margin-bottom: 16px;
   }
 
   p.footer-info-phone,

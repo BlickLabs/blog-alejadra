@@ -10,6 +10,9 @@ label[for="navbar-trigger"] {
   padding: 0 11.5px;
   width: 400px;
 }
+.hiddeOnWeb {
+  display: none !important;
+}
 .phone-content {
   display: flex;
   justify-content: center;
@@ -48,7 +51,7 @@ label[for="navbar-trigger"] {
   right: 0;
   margin: 0 !important;
   width: 100%;
-  text-align: center;
+  text-align: right;
   display: flex;
   background: #ed7161;
   justify-content: center;
@@ -105,49 +108,85 @@ label[for="navbar-trigger"] {
   label[for="navbar-trigger"]:hover {
     color: $orange;
   }
+  .hamburgerMenuIcon {
+    margin-bottom: 3px;
+    padding-right: 45px;
+    margin-top: 33px;
+  }
+  #hamburgerMenu {
+    -webkit-animation-duration: 0.5s;
+    transition:0.5s ease all;
+    -moz-transition:0.5s ease all;
+  }
+  .hamburgerMenuIcon > a {
+    color: white;
+  }
   label[for="navbar-trigger"]::before {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 14px;
     position: absolute;
-    right: 15px;
-    top: 18px;
+    right: 37px;
+    top: 35px;
     z-index: 3;
+    color: white;
   }
   .select {
-    
+    border-bottom: none !important;
+    border-right:  5px solid #f7c42a;;
   }
   .centerLogo {
     position: relative !important;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 110px;
+    width: initial;
     top: 0px;
   }
-
+  .menu-align {
+    padding-right: 45px;
+  }
+  .img-blog-menu {
+    width: 130px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 45px;
+  }
+  .hiddeOnMobil {
+    display: none !important;
+  }
   .header-navbar {
-    height: 65px;
-    background-color: #fff;
+    height: 79px;
+    background-color: #ed7161;
+  }
+  .logo {
+    width: initial;
   }
   .header-navbar-logo {
-    height: 40px;
-    margin-left: 15px;
+    height: 56px;
+    max-width: none;
     border: none;
+    margin-top: -5px;
+    border: none;
+    width: 145px;
   }
   .header-navbar-list {
     display: block;
-    height: 0;
+    height: 1000px;
     position: absolute;
-    top: 65px;
+    top: 0px;
+    width: 75% !important;
+    left: initial !important;
+    right: 0;
   }
   .header-navbar-list-item {
+    height: 30px;
     margin-left: 0 !important;
     display: block !important;
-    font-size: 18px;
-    height: 0;
-    line-height: 38px;
+    font-size: 17px!important;
+    line-height: 32px;
     overflow: hidden;
-    width: 100% !important;
+    width: 100%;
+    padding-right: 45px;
   }
   .header-navbar-list .phone {
     background: $yellow;
@@ -155,13 +194,8 @@ label[for="navbar-trigger"] {
   .header-navbar-list .phone i{
     font-size: 28px;
   }
-  #navbar-trigger:checked ~ ul {
-    height: auto;
-    margin-left: 0;
-  }
   #navbar-trigger:checked ~ ul li {
-    height: 38px;
-    margin-top: -1px;
+    height: 30px;
   }
   #navbar-trigger:checked + label {
     color: $orange;

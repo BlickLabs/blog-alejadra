@@ -71,11 +71,19 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 }
 
 @font-face {
+	font-family: 'Futura-Std-Bold';
+	src: url('fonts/Futura Std Bold.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Futura-Std';
 	src: url('fonts/FuturaStd-Light.woff');
 	font-weight: 500;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'FuturaStd-Heavy';
 	src: url('fonts/FuturaStd-Heavy 2.otf');
