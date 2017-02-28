@@ -1728,6 +1728,7 @@ a:hover {
 .entry-content {
 	color: #575656;
 	font-family: 'Futura-Std-Book';
+	padding-top: 50px !important;
 }
 
 .page-content {
@@ -1746,7 +1747,9 @@ a:hover {
 .entry-header {
 	color: #2c313f;
 }
-
+.entry-content {
+	padding-top: 7em;
+}
 /* Entry Hero & Has Post Tumbnail */
 .entry-hero,
 .site-content-wrapper .has-post-thumbnail .entry-header {
@@ -1759,8 +1762,8 @@ a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 30vh;
-	position: relative;
-	text-shadow: 0 0 0.15em rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 7em;
 }
 
 .site-content-wrapper .has-post-thumbnail .entry-header {
@@ -1802,7 +1805,7 @@ a:hover {
 .entry-hero a:hover,
 .site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:focus,
 .site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:hover {
-	color: rgba(255, 255, 255, 0.75);
+	color: #ed7161 !important;
 }
 
 .entry-hero .entry-title,
