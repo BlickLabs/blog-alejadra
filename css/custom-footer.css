@@ -195,12 +195,7 @@ p.footer-info-text {
 .emma-btn-dark.large {
   padding: 8px 40px;
 }
-.emma-btn-light {
-  background-color: #F7C42A;
-}
-.emma-btn-dark {
-  background-color: #F7C42A;
-}
+
 .emma-btn-dark:hover,
 .emma-btn-dark:active,
 .emma-btn-dark:focus {
