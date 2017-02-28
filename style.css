@@ -1728,7 +1728,6 @@ a:hover {
 .entry-content {
 	color: #575656;
 	font-family: 'Futura-Std-Book';
-	padding-top: 50px !important;
 }
 
 .page-content {
@@ -1747,9 +1746,7 @@ a:hover {
 .entry-header {
 	color: #2c313f;
 }
-.entry-content {
-	padding-top: 7em;
-}
+
 /* Entry Hero & Has Post Tumbnail */
 .entry-hero,
 .site-content-wrapper .has-post-thumbnail .entry-header {
@@ -1762,8 +1759,7 @@ a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 30vh;
-	position: absolute;
-	top: 7em;
+	position: relative;
 }
 
 .site-content-wrapper .has-post-thumbnail .entry-header {
