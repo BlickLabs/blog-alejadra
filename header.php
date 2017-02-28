@@ -59,7 +59,7 @@
 	<header class="header-navbar" id="principalHeader">
 	  <input type="checkbox" id="navbar-trigger" />
 	  <label class="fa fa-bars" id="bars" for="navbar-trigger" onclick="slide()"></label>
-		<a href="http://dev.alegpaez.com/" class="centerLogo" id="logo">
+		<a href="http://alegpaez.com/" class="centerLogo" id="logo">
 	    <img class="header-navbar-logo" src="<?php echo get_template_directory_uri() . '/img/icons/logo_2.png' ?>"/>
 	  </a>
 	  <ul class="header-navbar-list animated hiddeOnMobil" id="hamburgerMenu">
@@ -69,27 +69,27 @@
 				</a>
 			</li>
 			<li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com">
 	        Inicio
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/recetas/">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com/recetas/">
 	        Recetas
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/videos/">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com/videos/">
 	        Videos
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/servicios/">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com/servicios/">
 	        Servicios
 	      </a>
 	    </li>
 	    <li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/acerca/">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com/acerca/">
 	        Acerca de mi
 	      </a>
 	    </li>
@@ -99,7 +99,7 @@
 	      </a>
 	    </li>
 			<li class="header-navbar-list-item" hcolor="white">
-		    <a class="header-navbar-list-item-link" href="http://dev.alegpaez.com/contacto/">
+		    <a class="header-navbar-list-item-link" href="http://alegpaez.com/contacto/">
 	        Contacto
 	      </a>
 	    </li>

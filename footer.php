@@ -70,11 +70,8 @@
     var myform = document.getElementById("newsLetter");
     var fd = new FormData(myform );
     $.ajax({
-      url: "/newsletter/",
+      url: "http://alegpaez.com/newsletter/",
       data: fd,
-      cache: false,
-      processData: false,
-      contentType: false,
       type: 'POST',
       success: function (result) {
         // do something with the result

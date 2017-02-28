@@ -79,7 +79,7 @@ label[for="navbar-trigger"] {
   color: #fff;
 }
 .header-navbar-list-item-link-active {
-  color: #F7C42A !important;
+  color: white !important;
 }
 .header-navbar-list-item-link:hover {
   color: #F7C42A !important;
