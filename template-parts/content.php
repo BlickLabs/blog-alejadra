@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="hentry-wrapper">
 	<?php
-	if ( is_single() && has_post_thumbnail()) { 
+	if ( is_single() && has_post_thumbnail()) {
 	} else if (is_single() && !has_post_thumbnail()) { ?>
 		<header class="entry-header">
 			<div class="entry-header-wrapper">
@@ -24,12 +24,12 @@
 	<?php
 	} else if (!is_single() && has_post_thumbnail()) { ?>
 		<header class="entry-header" <?php shoreditch_background_image(); ?>>
-			<div class="entry-header-wrapper">
-	<?php
-		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-	 ?>
-			</div><!-- .entry-header-wrapper -->
 		</header><!-- .entry-header -->
+		<div class="entry-header-wrapper">
+<?php
+	the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+ ?>
+		</div><!-- .entry-header-wrapper -->
 	<?php
 	} else { ?>
 		<header class="entry-header">
@@ -42,7 +42,7 @@
 	<?php
 	}
 	?>
-			
+
 
 		<div class="entry-content">
 			<?php
