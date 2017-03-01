@@ -10,13 +10,14 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); shoreditch_background_image(); ?>>
 		<div class="hentry-wrapper">
 			<header class="entry-header">
+			</header><!-- .entry-header -->
+			<div>
 				<?php
 				shoreditch_entry_meta();
 
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
-			</header><!-- .entry-header -->
-
+			</div>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
