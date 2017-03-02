@@ -66,8 +66,13 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>
-  function sendNewsletterEmail() {
-    var myform = document.getElementById("newsLetter");
+  function sendNewsletterEmail(params) {
+    var myform;
+		if (params) {
+			myform = document.getElementById("newsLetterWordpress");
+		} else {
+			myform = document.getElementById("newsLetter");
+		}
     var fd = new FormData(myform );
     $.ajax({
       url: "http://alegpaez.com/newsletter/",
