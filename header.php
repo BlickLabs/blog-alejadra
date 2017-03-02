@@ -35,14 +35,29 @@
 
 	$(document).ready(function() {
 		$("body").click(function(event) {
-			if (event.target.tagName === 'I') {
+			if (event.target.id === 'bars') {
 				slide();
 			} else {
-				if (event.target.tagName !== 'NAV' && !event.target.classList.contains('hamburger'))
-				close();
+				if (event.target.tagName !== 'UL')
+					close();
 			}
 	  });
 	});
+	function close () {
+		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
+			document.querySelector('#hamburgerMenu').classList.add('slideOutRight');
+			document.querySelector('#hamburgerMenu').classList.remove('slideInRight');
+			setTimeout(function () {
+				document.querySelector('#hamburgerMenuIcon').classList.add('hiddeOnWeb');
+				document.querySelector('#imgMenu').classList.add('hiddeOnWeb');
+				document.querySelector('#principalHeader').classList.remove('hiddeInMobil');
+				document.querySelector('#hamburgerMenu').classList.remove('showMenu');
+				document.querySelector('#bars').classList.remove('hiddeOnMobil');
+				document.querySelector('#hamburgerMenu').classList.add('hiddeOnMobil');
+				document.querySelector('#logo').classList.remove('hiddeOnMobil');
+			}, 500);
+		}
+	}
 	function slide() {
 		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
 			document.querySelector('#hamburgerMenu').classList.add('slideOutRight');
@@ -73,7 +88,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shoreditch' ); ?></a>
 	<header class="header-navbar" id="principalHeader">
 	  <input type="checkbox" id="navbar-trigger" />
-	  <span class="fa fa-bars hiddeOnWeb showMovil" id="bars" for="navbar-trigger" onclick="slide()" style='position: fixed;right: 40px;color: white;'></span>
+	  <span class="fa fa-bars hiddeOnWeb showMovil" id="bars" for="navbar-trigger" style='position: fixed;right: 40px;color: white;'></span>
 		<a href="http://alegpaez.com/" class="centerLogo" id="logo">
 	    <img class="header-navbar-logo" src="<?php echo get_template_directory_uri() . '/img/icons/logo_2.png' ?>"/>
 	  </a>
