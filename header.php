@@ -43,7 +43,7 @@
 					close();
 			}
 	  });
-		$("body").on("tap", function(event) {
+		$("body").bind( "touchstart", function(event) {
 			console.log(event.target, '--------');
 			if (event.target.id === 'bars') {
 				slide();
