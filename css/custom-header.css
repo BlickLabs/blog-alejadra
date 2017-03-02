@@ -44,6 +44,18 @@ label[for="navbar-trigger"] {
 .entry-title > a{
   color: #ed7161 !important;
 }
+
+.entry-title > a:hover{
+  color: #ed7161 !important;
+}
+.entry-header  {
+  height: 257px !important;
+}
+
+.entry-header-wrapper {
+  padding-left: 0 !important;
+  padding-top: 0px !important;
+}
 .header-navbar-list {
   display: inline-block;
   height: 87px;
