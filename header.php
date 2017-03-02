@@ -73,7 +73,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shoreditch' ); ?></a>
 	<header class="header-navbar" id="principalHeader">
 	  <input type="checkbox" id="navbar-trigger" />
-	  <span class="fa fa-bars" id="bars" for="navbar-trigger" onclick="slide()" style='position: fixed;right: 40px;color: white;'></span>
+	  <span class="fa fa-bars hiddeOnWeb showMovil" id="bars" for="navbar-trigger" onclick="slide()" style='position: fixed;right: 40px;color: white;'></span>
 		<a href="http://alegpaez.com/" class="centerLogo" id="logo">
 	    <img class="header-navbar-logo" src="<?php echo get_template_directory_uri() . '/img/icons/logo_2.png' ?>"/>
 	  </a>
