@@ -142,10 +142,12 @@ label[for="navbar-trigger"] {
 }
 .entry-title > a{
   color: #ed7161 !important;
+  font-family: 'Futura-Std-Book';
 }
 
 .entry-title > a:hover{
   color: #ed7161 !important;
+  font-family: 'Futura-Std-Book';
 }
 .entry-header  {
   height: 257px !important;
