@@ -67,11 +67,13 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>
   function sendNewsletterEmail(params) {
-    var myform;
+    var myform, formElement;
 		if (params) {
 			myform = document.getElementById("getEmailByPersonRight");
+			formElement = document.getElementById("newsLetterWordpress");
 		} else {
-			myform = document.getElementById("getEmailByPerson");
+			myform = document.getElementById("correo");
+			formElement = document.getElementById("getEmailByPerson");
 		}
     var fd = new FormData(myform );
 		try {
@@ -83,7 +85,7 @@
 	        // do something with the result
 	        event.preventDefault();
 	        if (result.status === "subscribed") {
-	          document.getElementById("newsLetterWordpress").reset();
+	          formElement.reset();
 						noty({text: 'Listo, espera las últimas noticias'});
 	        } else {
 	          if (result.title === "Member Exists") {
