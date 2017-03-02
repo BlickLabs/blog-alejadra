@@ -77,7 +77,7 @@
 		try {
 			$.ajax({
 	      url: "http://alegpaez.com/newsletter/",
-	      data: {email: email.myform.value},
+	      data: {email: myform.value},
 	      type: 'POST',
 	      success: function (result) {
 	        // do something with the result
