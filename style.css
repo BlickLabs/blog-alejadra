@@ -1801,10 +1801,8 @@ button[type="submit"]:hover {
 }
 
 .entry-hero a:focus,
-.entry-hero a:hover,
-.site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:focus,
-.site-content-wrapper .has-post-thumbnail .entry-header-wrapper a:hover {
-	color: white !important;
+.entry-hero a:hover{
+	color: white;
 }
 
 .entry-hero .entry-title,
