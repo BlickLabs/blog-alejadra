@@ -28,6 +28,16 @@
 
 <body <?php body_class(); ?>>
 	<script>
+	$(document).ready(function() {
+		$("body").click(function(event) {
+			if (event.target.tagName === 'I') {
+				slide();
+			} else {
+				if (event.target.tagName !== 'NAV' && !event.target.classList.contains('hamburger'))
+				close();
+			}
+	  });
+	});
 	function slide() {
 		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
 			document.querySelector('#hamburgerMenu').classList.add('slideOutRight');
