@@ -43,6 +43,15 @@
 					close();
 			}
 	  });
+		$("body").on("tap", function(event) {
+			console.log(event.target, '--------');
+			if (event.target.id === 'bars') {
+				slide();
+			} else {
+				if (event.target.tagName !== 'UL')
+					close();
+			}
+	  });
 	});
 	function close () {
 		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
