@@ -35,6 +35,7 @@
 
 	$(document).ready(function() {
 		$("body").click(function(event) {
+			console.log(event.target, '--------');
 			if (event.target.id === 'bars') {
 				slide();
 			} else {
