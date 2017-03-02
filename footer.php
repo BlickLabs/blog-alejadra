@@ -83,7 +83,7 @@
 	        // do something with the result
 	        event.preventDefault();
 	        if (result.status === "subscribed") {
-	          document.getElementById("newsLetter").reset();
+	          document.getElementById("newsLetterWordpress").reset();
 						noty({text: 'Listo, espera las últimas noticias'});
 	        } else {
 	          if (result.title === "Member Exists") {
