@@ -42,7 +42,7 @@ label[for="navbar-trigger"] {
   vertical-align: middle;
 }
 .entry-title {
-  color: #ed7161;
+  color: #ed7161 !important;
 }
 .header-navbar-list {
   display: inline-block;
