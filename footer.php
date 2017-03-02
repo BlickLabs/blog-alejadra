@@ -10,7 +10,7 @@
  */
 
 ?>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.4.1/jquery.noty.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.4.1/packaged/jquery.noty.packaged.min.js'></script>
 	</div><!-- #content -->
 
 	<footer class="site-footer">
