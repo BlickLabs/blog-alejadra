@@ -1,3 +1,102 @@
+input[class='sendNewsletter'] {
+  font-size:18px;
+  margin: 11px 0px 0px 0px !important;
+  display:block;
+  width:100%;
+  border:none;
+  padding-top: 16px;
+  border-bottom:1px solid #e5e5e5;
+}
+input[class='sendNewsletter']:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#9b9b9b;
+  font-family: FuturaStd-Book;
+  font-size: 17px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  margin-left: -6px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+textarea:focus ~ label.custom-top, textarea:valid ~ label.custom-top{
+  top:-10px !important;
+}
+input[class='sendNewsletter']:focus ~ label, input[class='sendNewsletter']:valid ~ label, textarea:focus ~ label, textarea:valid ~ label{
+  top:-10px;
+  font-size:14px;
+  font-family: FuturaStd-Book;
+  color:#ed7161;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#ed7161;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after,textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+textarea {
+  resize: none;
+}
+/* active state */
+input:focus ~ .highlight, textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#ed7161; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#ed7161; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#ed7161; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
 label[for="navbar-trigger"] {
   display: none;
 }
