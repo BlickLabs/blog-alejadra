@@ -43,7 +43,7 @@
       <p class="footer-info center">
         Suscríbete a nuestro Newsletter
       </p>
-			<form class="form footer_form" onsubmit="sendNewsletterEmail(); return false;" id='newsLetter'>
+			<form class="form footer_form" onsubmit="sendNewsletterEmail(); return false;" id='getEmailByPerson'>
 				<div class="input_text">
 					<input required type="form_sub" class="suscribe form-control1" id="correo" placeholder="Correo electrónico">
 				</div>
@@ -84,38 +84,18 @@
 	        event.preventDefault();
 	        if (result.status === "subscribed") {
 	          document.getElementById("newsLetter").reset();
-						$.noty.defaults = {
-						  layout: 'top',
-						  theme: 'defaultTheme', // or relax
-						  type: 'success', // success, error, warning, information, notification
-						  text: 'Listo, espera las últimas noticias'
-						};
+						noty({text: 'Listo, espera las últimas noticias'});
 	        } else {
 	          if (result.title === "Member Exists") {
-							$.noty.defaults = {
-							  layout: 'top',
-							  theme: 'defaultTheme', // or relax
-							  type: 'alert', // success, error, warning, information, notification
-							  text: 'El correo ya existe, intenta con otro'
-							};
+							noty({text: 'El correo ya existe, intenta con otro'});
 	          } else {
-							$.noty.defaults = {
-							  layout: 'top',
-							  theme: 'defaultTheme', // or relax
-							  type: 'alert', // success, error, warning, information, notification
-							  text: 'El correo no es válido, intenta con otro'
-							};
+							noty({text: 'El correo no es válido, intenta con otro'});
 	          }
 	        }
 	      }
 	    });
 		} catch (e) {
-			$.noty.defaults = {
-				layout: 'top',
-				theme: 'defaultTheme', // or relax
-				type: 'alert', // success, error, warning, information, notification
-				text: 'Sucedió un error, intentalo de nuevo más tarde'
-			};
+			noty({text: 'Sucedió un error, intentalo de nuevo más tarde'});
 		}
 
   }
