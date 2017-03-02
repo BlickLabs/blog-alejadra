@@ -27,7 +27,22 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>
 	<script>
+
+	$(document).ready(function() {
+		$("body").click(function(event) {
+			if (event.target.tagName === 'I') {
+				slide();
+			} else {
+				if (event.target.tagName !== 'NAV' && !event.target.classList.contains('hamburger'))
+				close();
+			}
+	  });
+	});
 	function slide() {
 		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
 			document.querySelector('#hamburgerMenu').classList.add('slideOutRight');
@@ -58,7 +73,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shoreditch' ); ?></a>
 	<header class="header-navbar" id="principalHeader">
 	  <input type="checkbox" id="navbar-trigger" />
-	  <label class="fa fa-bars" id="bars" for="navbar-trigger" onclick="slide()"></label>
+	  <span class="fa fa-bars" id="bars" for="navbar-trigger" onclick="slide()" style='position: fixed;right: 40px;color: white;'></span>
 		<a href="http://alegpaez.com/" class="centerLogo" id="logo">
 	    <img class="header-navbar-logo" src="<?php echo get_template_directory_uri() . '/img/icons/logo_2.png' ?>"/>
 	  </a>
