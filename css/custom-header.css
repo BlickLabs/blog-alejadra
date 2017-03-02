@@ -316,4 +316,7 @@ label[for="navbar-trigger"] {
   #navbar-trigger:not(:checked) + label {
     color: #333;
   }
+  .site-content-wrapper .widget-area  {
+    border-top: none !important;
+  }
 }
