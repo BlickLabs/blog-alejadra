@@ -41,7 +41,7 @@ label[for="navbar-trigger"] {
   width: 173px;
   vertical-align: middle;
 }
-.entry-title {
+.entry-title > a{
   color: #ed7161 !important;
 }
 .header-navbar-list {
