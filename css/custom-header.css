@@ -10,7 +10,7 @@ input[class='sendNewsletter'] {
 input[class='sendNewsletter']:focus 		{ outline:none; }
 
 /* LABEL ======================================= */
-label 				 {
+label[class='onlyNewsletter'] 				 {
   color:#9b9b9b;
   font-family: FuturaStd-Book;
   font-size: 17px;
