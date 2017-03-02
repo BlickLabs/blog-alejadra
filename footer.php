@@ -10,7 +10,7 @@
  */
 
 ?>
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.4.1/jquery.noty.js'></script>
 	</div><!-- #content -->
 
 	<footer class="site-footer">
@@ -69,31 +69,55 @@
   function sendNewsletterEmail(params) {
     var myform;
 		if (params) {
-			myform = document.getElementById("newsLetterWordpress");
+			myform = document.getElementById("getEmailByPersonRight");
 		} else {
-			myform = document.getElementById("newsLetter");
+			myform = document.getElementById("getEmailByPerson");
 		}
     var fd = new FormData(myform );
-    $.ajax({
-      url: "http://alegpaez.com/newsletter/",
-      data: fd,
-      type: 'POST',
-      success: function (result) {
-        // do something with the result
-        event.preventDefault();
-        if (result.status === "subscribed") {
-          document.getElementById("newsLetter").reset();
-          document.querySelector('#notifications').text = 'Listo, espera las últimas noticias';
-        } else {
-          if (result.title === "Member Exists") {
-            document.querySelector('#notifications').text = 'El correo ya existe, intenta con otro';
-          } else {
-            document.querySelector('#notifications').text = 'El correo no es válido, intenta con otro';
-          }
-        }
-        document.querySelector('#notifications').open();
-      }
-    });
+		try {
+			$.ajax({
+	      url: "http://alegpaez.com/newsletter/",
+	      data: {email: email.myform.value},
+	      type: 'POST',
+	      success: function (result) {
+	        // do something with the result
+	        event.preventDefault();
+	        if (result.status === "subscribed") {
+	          document.getElementById("newsLetter").reset();
+						$.noty.defaults = {
+						  layout: 'top',
+						  theme: 'defaultTheme', // or relax
+						  type: 'success', // success, error, warning, information, notification
+						  text: 'Listo, espera las últimas noticias'
+						};
+	        } else {
+	          if (result.title === "Member Exists") {
+							$.noty.defaults = {
+							  layout: 'top',
+							  theme: 'defaultTheme', // or relax
+							  type: 'alert', // success, error, warning, information, notification
+							  text: 'El correo ya existe, intenta con otro'
+							};
+	          } else {
+							$.noty.defaults = {
+							  layout: 'top',
+							  theme: 'defaultTheme', // or relax
+							  type: 'alert', // success, error, warning, information, notification
+							  text: 'El correo no es válido, intenta con otro'
+							};
+	          }
+	        }
+	      }
+	    });
+		} catch (e) {
+			$.noty.defaults = {
+				layout: 'top',
+				theme: 'defaultTheme', // or relax
+				type: 'alert', // success, error, warning, information, notification
+				text: 'Sucedió un error, intentalo de nuevo más tarde'
+			};
+		}
+
   }
 </script>
 </body>
