@@ -27,6 +27,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<script>
 	function slide() {
 		if (document.querySelector('#hamburgerMenu').classList.contains('showMenu')) {
 			document.querySelector('#hamburgerMenu').classList.add('slideOutRight');
