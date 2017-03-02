@@ -38,7 +38,6 @@ label[for="navbar-trigger"] {
   background-color: #fff;
 }
 .header-navbar-logo {
-  height: 69px;
   width: 173px;
   vertical-align: middle;
 }
@@ -58,11 +57,11 @@ label[for="navbar-trigger"] {
 }
 .header-navbar-list-item {
   display: inline-block;
-  margin-right: 17.5px;
-  margin-left: 17.5px;
+  padding-right: 14px;
+  padding-left: 14px;
+  margin-top: -0.1em;
   font-family: "Montserrat Regular";
   font-size: 17px;
-  height: 100%;
   line-height: 80px;
   vertical-align: middle;
 }
