@@ -1786,12 +1786,18 @@ a:hover {
 button[type="submit"] {
 	border-radius: 0px !important;
 	padding: 17px !important;
+	padding-right: 39px !important;
 	font-size: 15px !important;
+	padding-left: 39px !important;
+	height: 56px;
 }
 button[type="submit"]:hover {
 	border-radius: 0px !important;
 	padding: 17px !important;
+	padding-right: 39px !important;
 	font-size: 15px !important;
+	padding-left: 39px !important;
+	height: 56px;
 	background: #ed7161;
 }
 .entry-hero a,
